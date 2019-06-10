@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		 <meta charset="utf-8">
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<title>G'N'R</title>
+	<script>
+  $(function() {
+  //Opens sub-menu when clicked
+  $(".toggle").on("click", function() {
+	$(".submenu").slideToggle(300);
+
+	//changes the icon from down to up
+	//I'll add an animation soon where the icon will rotate when clicked
+	$(".toggle").css("transform", "rotate(-180deg)");
+  });
+
+  //Auto close menu after clicking sub-menu
+  $(".sub").on("click", function() {
+	$(".submenu").slideToggle(300);
+	$(".toggle").css("transform", "rotate(180deg)");
+  });
+});
+
+  </script>
+  <style>
+  body {
+  background: linear-gradienT(#dc143c, #000000, #b22222, #000000);
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+#body {
+  position: relative;
+  float: inherit;
+}
+img {
+  height: 350px;
+  width: 100%;
+  position: relative;
+}
+div:h1 {
+  align-content: center;
+  position: relative;
+  color: white;
+  transform: uppercase;
+}
+
+a {
+  color: black;
+}
+p {
+  color: white;
+  position: relative;
+}
+
+.menu-div {
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+
+.menu {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(#b22222, #000000, #dc143c, #000);
+}
+
+.toggle {
+  color: black;
+  float: right;
+  margin-right: 20px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.btn-nav:focus {
+  background-color: red;
+}
+
+h3 {
+  text-align: center;
+  color: grey;
+  margin-left: 10px;
+}
+
+.brand:focus,
+.brand:hover {
+  color: white;
+}
+
+.submenu {
+  background-color: #333333;
+  display: none;
+}
+
+.sub {
+  display: none;
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.sub:focus,
+.sub:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.container1 {
+  height: 300px;
+  width: 100%;
+  background-color: red;
+  border: 2px solid black;
+  padding-bottom: 500px;
+  margin-top: 65px;
+}
+#members {
+  color: grey;
+  font-family: "Roboto", sans-serif;
+}
+.foot {
+  text-align: center;
+  position: relative;
+  float: none;
+}
+
+#slashInfo,
+#axlInfo,
+#izzyInfo,
+#steveInfo,
+#mattInfo,
+#fizzyInfo,
+#fsteveInfo {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn,
+.btn:focus,
+.btn:hover {
+  background-color: black;
+}
+
+.foundingmemberimgs {
+  float: right;
+  width: 300px;
+  height: 175px;
+}
+.formerfloat {
+  float: right;
+}
+.founderfloat {
+  float: left;
+}
+
+  </style>
+  </head>
+	<header></header>
+<body>
+  <div class="menu-div">
+	<div class="menu">
+	  <i class="toggle glyphicon glyphicon-chevron-down"></i>
+	  <a href="#">
+		<h3 class="brand">G'N'R</h3>
+	  </a>
+	</div>
+	<div class="submenu">
+	  <a class="sub" href="#members">Band Members</a>
+	  <a class="sub" href="#c2">Album</a>
+	  <a class="sub" href="#c3">History of the Band</a>
+	</div>
+  </div>
+  <br />
+  <hr>
+  <br />
+
+  <img src="https://1000logos.net/wp-content/uploads/2017/02/Guns-N%E2%80%99-Roses-Logo-history.jpg" alt="Guns 'n' Roses Logo" />
+
+  <h1>Welcome to a page all about Guns 'n' Roses</h1>
+
+  <p>Guns 'n' Roses have always been one of my all-time favorite bands. They have a such a widespan of music types. From blistering solos in Paradise City to the gentle tones of their cover for knockin on Heavens Door. </p>
+
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#members">Band Members</button>
+  <div id="members" class="collapse">
+	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#foundingmembers">Founding Members</button>
+	<div id="foundingmembers" class="collapse founderfloat">
+	  <div class="Axl container row">
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#axlInfo">
+	<h1>Axl Rose</h1>
+	</button>
+		<div id="axlInfo" class="collapse">
+		  <img class="foundingmemberimgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSECKBAXU4FT9KB3XpOv18xtue8-QcQogJaVPZPUEaeAD2O0Cx2" alt="Axl Rose">
+		  <hr>
+		  <p>Axl Rose is the lead singer of Guns 'N' Roses. Axl has an amazing voice and can cover such a wide variety of sounds as seen from there songs. His serpent like dance moves are always something thats draws in everyone watching him in action.</p>
+		  <ol>
+			<li>Full Name: William Bruce Rose Jr.</li>
+			<li>Date Of Birth: Feb. 6th, 1962</li>
+			<li>Age: 57</li>
+			<li>Born:Lafayette, Indiana, USA</li>
+		  </ol>
+
+		</div>
+	  </div>
+	  <div class="Slash container row">
+		<button type="button" class="btn btn-info " data-toggle="collapse" data-target="#slashInfo">
+	<h1>Slash</h1>
+	</button>
+		<div id="slashInfo" class="collapse">
+		  <img class="foundingmemberimgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuIAXV7XRatn_d7a1Uw-3WRdY8SlD4T-OLBfOTLikl-rKvh-tdA" alt="Slash">
+		  <hr>
+		  <P>Saul Hudson AKA Slash is the original lead guitarist for Guns 'n' Roses and what I consider one of the greatest guitarist of all time. Naturally this is my opinion but playing guitar for a number of years I have always strived to play like Slash,
+			his raw shredding style of playing has alwasy been something that I have loved. I've read his biography a number of times and one thing </P>
+		  <ol>
+			<li>Full Name: Saul Hudson </li>
+			<li>Date of Birth: July 23rd, 1965</li>
+			<li>Age: 53 </li>
+			<li>Born: Hampstead, London England </li>
+		  </ol>
+		</div>
+	  </div>
+	  <div class="izzy container row">
+		<!--start of izzys section-->
+
+		<button type="button" class="btn btn-info " data-toggle="collapse" data-target="#izzyInfo"> <h1>Izzy Stradlin</h1>
+</button>
+		<div id="izzyInfo" class="collapse">
+		  <img class="foundingmemberimgs" src="https://www.bing.com/th?id=OIP.du-kuCAgHpfPpgd8PB4F8wAAAA&w=173&h=300&c=7&o=5&dpr=1.5&pid=1.7" alt="Izzy">
+		  <hr>
+		  <p>Izzy Stradlin was the original rhythm guitar for Guns 'n' Roses. </p>
+		  <ol>
+			<li>Full Name: Jeffrey Dean Isbell</li>
+			<li>Date of Birth: April 8th, 1962</li>
+			<li>Age:57</li>
+			<li>Born: Lafayette, Indiana, USA</li>
+		  </ol>
+		</div>
+		<!--end of izzys section-->
+	  </div>
+	  <div class="steve container row">
+		<button type="button" class="btn btn-info " data-toggle="collapse" data-target="#steveInfo"> <h1>Steve Adler</h1>
+</button>
+		<div id="steveInfo" class="collapse">
+		  <img class="foundingmemberimgs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/StevenAdlerMylesKennedy.jpg/250px-StevenAdlerMylesKennedy.jpg" alt="Steve">
+		</div>
+		<!-- End of Steve Adler section -->
+	  </div>
+	  <!--end of Founding members -->
+	</div>
+	<!-- End of Founding Members section -->
+
+	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#formermembers">Former Members</button>
+	<div id="formermembers" class="collapse formerfloat">
+	  <div class="izzy container row">
+		<!--start of izzys section-->
+
+		<button type="button" class="btn btn-info " data-toggle="collapse" data-target="#fizzyInfo"> <h1>Izzy Stradlin</h1>
+</button>
+		<div id="fizzyInfo" class="collapse">
+		  <img class="foundingmemberimgs" src="https://www.bing.com/th?id=OIP.du-kuCAgHpfPpgd8PB4F8wAAAA&w=173&h=300&c=7&o=5&dpr=1.5&pid=1.7" alt="Izzy">
+		  <hr>
+		  <p>Izzy Stradlin was the original rhythm guitar for Guns 'n' Roses. </p>
+		  <ol>
+			<li>Full Name: Jeffrey Dean Isbell</li>
+			<li>Date of Birth: April 8th, 1962</li>
+			<li>Age:57</li>
+			<li>Born: Lafayette, Indiana, USA</li>
+		  </ol>
+		</div>
+		<!--end of izzys section-->
+	  </div>
+	  <!-- Start of Steve Adler section -->
+	  <div class="steve container row">
+		<button type="button" class="btn btn-info " data-toggle="collapse" data-target="#fsteveInfo"> <h1>Steve Adler</h1>
+</button>
+		<div id="fsteveInfo" class="collapse">
+		  <img class="foundingmemberimgs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/StevenAdlerMylesKennedy.jpg/250px-StevenAdlerMylesKennedy.jpg" alt="Steve">
+		</div>
+		<!-- End of Steve Adler section -->
+	  </div>
+	  <!-- Start of Matt Sorum section -->
+	  <div class="matt container row">
+		<button type="button" class="btn btn-info " data-toggle="collapse" data-target="#mattInfo"> <h1>Matt Sorum</h1>
+</button>
+		<div id="mattInfo" class="collapse">
+		  <img class="foundingmemberimgs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Matt_Sorum_%286465384277%29_%28cropped%29.jpg/85px-Matt_Sorum_%286465384277%29_%28cropped%29.jpg" alt="Matt Sorum">
+		</div>
+		<!--end of former members info -->
+	  </div>
+
+	  <!--end of band Members section -->
+	</div>
+
+</body>
+<footer>
+  <p class="foot"> APWorks &copy; 2019</p>
+</footer>
